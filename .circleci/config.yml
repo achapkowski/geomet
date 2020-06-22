@@ -11,7 +11,9 @@ jobs:
       - python/load-cache
       - python/install-deps
       - python/save-cache
+      
       - run:
+          command: ./build-scripts/01-build.sh
           command: ./build-scripts/02-test.sh
           name: Test
 
